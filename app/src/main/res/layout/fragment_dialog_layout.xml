@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="闪讯无线助手"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/id_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/id_btn_left"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/id_btn_right"
+            android:background="@drawable/sel_dialog_btn"
+            android:text="取消"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/id_btn_right"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sel_dialog_btn"
+            android:text="确定"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#17C96C</color>
+    <color name="colorPrimary">#2CCA77</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigationBarColor">#17C96C</color>
+    <color name="btnNormalColor">#2CCA77</color>
+    <color name="btnSelectedColor">#0d9f53</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

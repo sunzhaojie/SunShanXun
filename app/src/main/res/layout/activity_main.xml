@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sun="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        tools:context=".main.MainAty">
+
+        <com.example.sunshanxun.view.SXTitleView
+            android:id="@+id/id_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            sun:titleText="闪讯无线助手" />
+
+        <EditText
+            android:id="@+id/id_edit_router_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_title_view"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sel_edit"
+            android:hint="路由器管理员账号"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/edit_cursor" />
+
+        <EditText
+            android:id="@+id/id_edit_router_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_edit_router_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sel_edit"
+            android:hint="路由器管理员密码"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/edit_cursor" />
+
+        <EditText
+            android:id="@+id/id_edit_shanxun_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_edit_router_password"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sel_edit"
+            android:hint="闪讯账号"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/edit_cursor" />
+
+        <EditText
+            android:id="@+id/id_edit_shanxun_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_edit_shanxun_name"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sel_edit"
+            android:hint="闪讯密码"
+            android:inputType="textPassword"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textCursorDrawable="@drawable/edit_cursor" />
+
+        <RelativeLayout
+            android:id="@+id/id_rl_cb_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_edit_shanxun_password"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="15dp">
+
+            <CheckBox
+                android:id="@+id/id_cb_remember"
+                style="@style/SXCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:checked="true"
+                android:text="记住账号密码"
+                android:textColor="@color/black" />
+
+
+            <CheckBox
+                android:id="@+id/id_cb_log"
+                style="@style/SXCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:checked="true"
+                android:text="显示Log"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/id_rl_cb_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_rl_cb_1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="15dp">
+
+            <CheckBox
+                android:id="@+id/id_cb_get_sx_pwd"
+                style="@style/SXCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="自动获取闪讯密码"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/id_cb_reconnect"
+                style="@style/SXCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="自动重连"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_rl_cb_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_rl_cb_2"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="15dp">
+
+
+            <CheckBox
+                android:id="@+id/id_cb_auto_log"
+                style="@style/SXCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:checked="false"
+                android:text="显示自动拨号Log"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/id_btn_dial"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_rl_cb_3"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/sel_btn"
+            android:enabled="false"
+            android:text="拨号"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ScrollView
+            android:id="@+id/id_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/id_btn_dial"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/id_tv_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:hint="软件已开源，教程博客已写好，详见关于"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/id_tv_auto_logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/id_tv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/id_tv_msg"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="关于"
+            android:textColor="#0D6285"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/id_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:text="Copyright (c) 2017年 孙照杰.  All rights reserved."
+            android:textColor="#555555"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/id_iv_float"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_ordertime_add_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.example.sunshanxun.view.SXTitleView
+        android:id="@+id/id_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        sun:leftImage="@drawable/navigation_back"
+        sun:titleText="测试入口" />
+
+    <Button
+        android:id="@+id/id_btn_show_crash_logs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/sel_btn"
+        android:text="显示Crash日志"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/id_btn_net_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sel_btn"
+        android:text="当前网络状态"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/id_edit_report_logs_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_edit_router_password"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/sel_edit"
+        android:hint="日志上报IP"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textCursorDrawable="@drawable/edit_cursor"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/id_btn_change_report_logs_ip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/sel_btn"
+        android:text="修改日志上报IP"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+    <ScrollView
+        android:id="@+id/id_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id_tv_logs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/black" />
+
+        </FrameLayout>
+
+
+    </ScrollView>
+</LinearLayout>

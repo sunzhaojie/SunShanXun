@@ -1,0 +1,28 @@
+<resources>
+
+    <declare-styleable name="IKActionLine">
+        <attr name="leftImageView" format="reference|color" />
+        <attr name="leftTextViewText" format="reference|string" />
+        <attr name="rightTextViewText" format="reference|string" />
+        <attr name="midTextViewText" format="reference|string" />
+        <attr name="rightImageView" format="reference|color" />
+        <attr name="showArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="IKEditLine">
+        <attr name="leftEditText" format="reference|string" />
+        <attr name="midHintText" format="reference|string" />
+        <attr name="rightEditImageView" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="IKSwitchBar">
+        <attr name="leftText" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="IKTitleView">
+        <attr name="leftImage" format="reference" />
+        <attr name="titleText" format="reference|string" />
+        <attr name="rightText" format="reference|string" />
+    </declare-styleable>
+
+</resources>
